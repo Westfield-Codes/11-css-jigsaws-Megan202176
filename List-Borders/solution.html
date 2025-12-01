@@ -12,22 +12,63 @@
     /* Add these styles in order */
      
     /* Center the title "High Factor Times Tables */
+    h2{
+      text-align: center;
+    }
 
     /* Display each table in a row with inline-block */
-    
+    li{
+
+      display: inline-block;
+    }
+
     /* Put a rounded (20px) solid black border box around the timestables div */
+    #timestables{
+      border-style:solid;
+      border-width: 2px;
+      border-radius: 20px;
+    }
 
     /* Put a rounded (10px) solid black border box around EACH times table */
-    
+    ol{
+      border-style:solid;
+      border-width: 2px;
+      border-radius: 20px;
+    }
+    #tables{
+      border-color:white;
+    }
     /* underline the top numbers red */
-    
+    h4{
+      border-style:solid;
+      border-color:rgb(177, 9, 9);
+      border-top: 20px;
+      border-left: 20px;
+      border-right: 20px;
+
+    }
+
     /* go night mode on hovers over each timestable, but not the parent  */
-  
+  li:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 20px;
+  }
+
     /* 20 px space below the last equation in each table */
+.last{
+  margin-bottom: 20px;;
+}
 
     /* add a top margin of 20px on each table, but not the parent */
 
+  ol{
+    margin-top:20px;
+  }
      /* subtract 20px from left margins of each child table, add it to the right margins */
+ ol{
+
+ }
 
     /* put 25px padding at the bottom of the parent  */
 
@@ -55,7 +96,7 @@
           <li>7 X 9 = 63</li>
           <li>7 X 10 = 70</li>
           <li>7 X 11 = 78</li>
-          <li>7 X 12 = 84</li>
+          <li class="last">7 X 12 = 84</li>
         </ol>
       </li>
       <li> 
