@@ -10,28 +10,55 @@
   <style>
 
     .button{
+      
       border-style:solid;
       border-color:rgb(109, 176, 207);
       border-radius:20px;
       width:150px;
       height:75px;
       font-size:20px;
+      transition:color 0.5s, background 0.5s;
     }
+
     .button:hover{
       color:white;
       background:rgb(109, 176, 207);
     }
 
     .button2{
+       font-family: "Times New Roman", Times, serif;
       color:white;
       background-color: red;
       border-style:none;
        width:150px;
-      height:75px;
+      height:60px;
       font-size:20px;
+      transition: box-shadow 1s;
+      transition: width 1s;
     }
-    .button3{
 
+    .button2:hover{
+      width:200px;
+     box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+      }
+
+    
+    .button3{
+     font-family: "Times New Roman", Times, serif;
+      background-color: rgb(44, 185, 127);
+      color:white;
+      width:170px;
+      height:80px;
+      border-radius: 20px;
+      border-style:none;
+      font-size:30px;
+       box-shadow: 0px 8px 0px 1px rgba(120, 120, 120, 1);
+    }
+
+    .button3:active{
+      background-color:rgb(33, 146, 99);
+      transform: translateY(4px);
+       box-shadow: 0px 4px 0px 1px rgba(120, 120, 120, 1);
     }
   </style>
 </head>
